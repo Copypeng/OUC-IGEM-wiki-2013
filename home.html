@@ -2,8 +2,7 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" media="screen">
-<link href="http://oucast.com/igem/css/bootstrap-responsive.css" rel="stylesheet" media="screen">
+<link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" media="screen">
 <style>
 #top-section{
    height:0px;
@@ -13,7 +12,6 @@
     padding:0 0 0 0;
     background-color:transparent;
     overflow:hide;
-
 }
 #p-logo{display:none;}
 #search-controls{display:none;}
@@ -396,7 +394,12 @@ header {
 	-moz-transform: translateY(-5px) scale(1.05) rotate(2deg);
 	transform: translateY(-5px) scale(1.05) rotate(2deg);
 }
-
+.dropdown-submenu{position:relative;}
+.dropdown-submenu>.dropdown-menu{top:0;left:100%;margin-top:-6px;margin-left:-1px;-webkit-border-radius:0 6px 6px 6px;-moz-border-radius:0 6px 6px 6px;border-radius:0 6px 6px 6px;}
+.dropdown-submenu:hover>.dropdown-menu{display:block;}
+.dropdown-submenu>a:after{display:block;content:" ";float:right;width:0;height:0;border-color:transparent;border-style:solid;border-width:5px 0 5px 5px;border-left-color:#cccccc;margin-top:5px;margin-right:-10px;}
+.dropdown-submenu:hover>a:after{border-left-color:#ffffff;}
+.dropdown-submenu.pull-left{float:none;}.dropdown-submenu.pull-left>.dropdown-menu{left:-100%;margin-left:10px;-webkit-border-radius:6px 0 6px 6px;-moz-border-radius:6px 0 6px 6px;border-radius:6px 0 6px 6px;}
 	</style>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -405,37 +408,33 @@ header {
 <title>index</title>
 </head>
 <body >
-
-
-
-<div class="navbar navbar-inverse navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-		<div class="row"><div class="span3"><a href="http://2013.igem.org/Main_Page"><img src="http://2013.igem.org/wiki/images/6/6a/Ouc-igem1.jpg" alt="logo" style="width:70px;height:50px;margin-top:0px;padding:0 0 0 0;" class="brand png"></a></div>
-          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-            <div class="nav-collapse collapse">
-                  <ul class="nav pull-right">
-				  <li class="active"><a href="http://2013.igem.org/Team:OUC-China"><font size="4.5px">Home</font></a></li>
-              <li class="dropdown">
-                <a class="dropdown-toggle" id="drop4" role="button" data-toggle="dropdown" href="#"><font size="4.5px">Project</font><b class="caret"></b>
-				</a>
-                <ul id="menu1" class="dropdown-menu" role="menu" aria-labelledby="drop4">
-				 <li role="presentation"><a role="menuitem" tabindex="-1" href="http://2013.igem.org/Team:OUC-China/Overview">Overview</a>
-                  <li role="presentation"><a role="menuitem" tabindex="-1" href="http://2013.igem.org/Team:OUC-China/Achievement">Achievement & judge criteria</a>
-                  <li class="dropdown-submenu">
-                  <a tabindex="-1" href="#">Intercellular compartment</a>
-				  <ul class="dropdown-menu">
-                      <li><a tabindex="-1" href="http://2013.igem.org/Team:OUC-China/Review">Review</a></li>
-                      <li><a tabindex="-1" href="http://2013.igem.org/Team:OUC-China/Design">Design</a></li>
-					  <li><a tabindex="-1" href="http://2013.igem.org/Team:OUC-China/Microfluidics">Microfluidics</a></li>
-					  <li><a tabindex="-1" href="http://2013.igem.org/Team:OUC-China/Results">Results</a></li>
-
-					  </ul>
-				  </li>
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="navbar-header">
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+			<span class="sr-only">Toggle navigation</span>
+      		<span class="icon-bar"></span>
+      		<span class="icon-bar"></span>
+      		<span class="icon-bar"></span>
+      	</button>
+          	<a class="navbar-brand" href="#">OUC-IGEM</a>
+    </div>
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+    	<ul class="nav navbar-nav pull-right">
+			<li><a href="./">Home</a></li>
+            <li class="dropdown" role="menu" aria-labelledby="dropdownMenu">
+            	<a class="dropdown-toggle" data-toggle="dropdown" href="#">Project<b class="caret"></b></a>
+            	<ul class="dropdown-menu">
+					<li role="presentation"><a role="menuitem" tabindex="-1" href="http://2013.igem.org/Team:OUC-China/Overview">Overview</a></li>
+                 	<li role="presentation"><a role="menuitem" tabindex="-1" href="http://2013.igem.org/Team:OUC-China/Achievement">Achievement & judge criteria</a></li>
+                  	<li class="dropdown-submenu">
+                  		<a tabindex="-1" href="#">Intercellular compartment</a>
+				  			<ul class="dropdown-menu">
+                      	<li><a tabindex="-1" href="http://2013.igem.org/Team:OUC-China/Review">Review</a></li>
+                      	<li><a tabindex="-1" href="http://2013.igem.org/Team:OUC-China/Design">Design</a></li>
+					  	<li><a tabindex="-1" href="http://2013.igem.org/Team:OUC-China/Microfluidics">Microfluidics</a></li>
+					  	<li><a tabindex="-1" href="http://2013.igem.org/Team:OUC-China/Results">Results</a></li>
+					  		</ul>
+				  	</li>
                   <li class="dropdown-submenu">
                   <a tabindex="-1" href="#">RNA guardian</a>
 				  <ul class="dropdown-menu">
@@ -443,58 +442,45 @@ header {
                       <li><a tabindex="-1" href="http://2013.igem.org/Team:OUC-China/RNA guardian/Design">Design</a></li>
 					  <li><a tabindex="-1" href="http://2013.igem.org/Team:OUC-China/RNA guardian/Results">Result</a></li>
 					  <li><a tabindex="-1" href="http://2013.igem.org/Team:OUC-China/Reference">Reference</a></li>
-					  
-
 					  </ul>
 				  </li>
 				  <li role="presentation"><a role="menuitem" tabindex="-1" href="http://2013.igem.org/Team:OUC-China/Part description">Part description</a></li>
                   <li role="presentation" class="divider"></li>
 				   <li role="presentation"><a role="menuitem" tabindex="-1" href="http://2013.igem.org/Team:OUC-China/Future work">Future work</a></li>
                 </ul>
-              </li>
-              <li class="dropdown">
-                <a class="dropdown-toggle" id="drop5" role="button" data-toggle="dropdown" href="#"><font size="4.5px">Modeling</font><b class="caret"></b></a>
-                <ul id="menu2" class="dropdown-menu" role="menu" aria-labelledby="drop5">
+           	</li>
+            <li class="dropdown" role="menu" aria-labelledby="dropdownMenu">
+            	<a class="dropdown-toggle" data-toggle="dropdown" href="#">Modeling<b class="caret"></b></a>
+                <ul class="dropdown-menu">
                   <li role="presentation"><a role="menuitem" tabindex="-1" href="http://2013.igem.org/Team:OUC-China/Magnetic Analysis">Magnetic Analysis</a></li>
                   <li role="presentation" class="divider"></li>
                   <li role="presentation"><a role="menuitem" tabindex="-1" href="http://2013.igem.org/Team:OUC-China/Model in RNA guardian">Model in RNA guardian</a></li>
                 </ul>
-              </li>
-              <li class="dropdown">
-                <a  href="http://2013.igem.org/Team:OUC-China/Human Practice"><font size="4.5px">Human Practice</font></a>
-                
-              </li>
-				<li class="dropdown">
-                <a class="dropdown-toggle" id="drop5" role="button" data-toggle="dropdown" href="#"><font size="4.5px">Team</font><b class="caret"></b></a>
-               <ul id="menu2" class="dropdown-menu" role="menu" aria-labelledby="drop5">
+            </li>
+            <li><a  href="http://2013.igem.org/Team:OUC-China/Human Practice">Human Practice</a></li>
+			<li class="dropdown">
+            	<a class="dropdown-toggle" data-toggle="dropdown" href="#">Team<b class="caret"></b></a>
+            	<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
                   <li role="presentation"><a role="menuitem" tabindex="-1" href="http://2013.igem.org/Team:OUC-China/Members">Members</a></li>
                   <li role="presentation"><a role="menuitem" tabindex="-1" href="http://2013.igem.org/Team:OUC-China/Instructors">Instructors</a></li>
                   <li role="presentation"><a role="menuitem" tabindex="-1" href="http://2013.igem.org/Team:OUC-China/Advisor">Advisor</a></li>
 				  <li role="presentation"><a role="menuitem" tabindex="-1" href="http://2013.igem.org/Team:OUC-China/Lab">Lab</a></li>
 				  <li role="presentation"><a role="menuitem" tabindex="-1" href="http://2013.igem.org/Team:OUC-China/Acknowledgement">Acknowledgement</a></li>
-				  </ul>
-              </li>
-			  <li class="dropdown">
-                <a  href="http://2013.igem.org/Team:OUC-China/Safety"><font size="4.5px">Safety</font></a>
-                
-              </li>
-			  <li class="dropdown">
-                <a class="dropdown-toggle" id="drop5" role="button" data-toggle="dropdown" href="#"><font size="4.5px">Notebook</font><b class="caret"></b></a>
-                <ul id="menu2" class="dropdown-menu" role="menu" aria-labelledby="drop5">
+				</ul>
+             </li>
+			 <li class="dropdown"><a  href="http://2013.igem.org/Team:OUC-China/Safety">Safety</a></li>
+			 <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Notebook<b class="caret"></b></a>
+                <ul id="menu2" class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
                   <li role="presentation"><a role="menuitem" tabindex="-1" href="http://2013.igem.org/Team:OUC-China/Lab note">Lab note</a></li>
                   <li role="presentation" class="divider"></li>
                   <li role="presentation"><a role="menuitem" tabindex="-1" href="http://2013.igem.org/Team:OUC-China/Protocol">Protocol</a></li>
                 </ul>
-              </li>
-			  </ul>
+             </li>
+		</ul>
+	</div>
 </div>
-          </div>
-        </div>
-      </div>
-    </div>
-<br><br>
-
-	 <div id="myCarousel" class="carousel slide">
+<div id="myCarousel" class="carousel slide">
 	 	<ol class="carousel-indicators">
     <li data-target="#myCarousel" data-slide-to="0"  class="active"></li>
     <li data-target="#myCarousel" data-slide-to="1"></li>
