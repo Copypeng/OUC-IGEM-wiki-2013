@@ -15,6 +15,9 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+body{
+  color: #34495e;
+}
 #globalWrapper {
 	font-size: 100%;
 }
@@ -47,6 +50,9 @@ div#contentSub{
 	width:100%;
 	position: absolute;
 	background-color: #FFFFFF;
+}
+h1{
+  border-bottom:none;
 }
 /*the nav settings
 ----------------------------------------------- */
@@ -110,20 +116,17 @@ div#contentSub{
   position: relative;
   width: 100%;
   overflow: auto;
-
   font-size: 18px;
   line-height: 24px;
   text-align: center;
-
-  color: rgba(255,255,255,.6);
-  text-shadow: 0 0 1px rgba(0,0,0,.05), 0 1px 2px rgba(0,0,0,.3);
-
-  background: #1abc9c;
+  color: #fff;
+  background: ;
   box-shadow: 0 1px 2px rgba(0,0,0,.25);
 }
   .banner ul {
     list-style: none;
     width: 300%;
+    margin: 0;
   }
   .banner ul li {
     display: block;
@@ -305,12 +308,11 @@ div#contentSub{
 <!--the slidershow begin-->
 <div class="banner">
       <ul>
-        <li style="background-image: url('http://www.bootcss.com/p/unslider/img/sunset.jpg');">
+        <li style="background-image: url('http://2013.igem.org/wiki/images/2/24/Slider-wenjun-result.jpg');">
           <div class="inner">
-            <h1>Come on! OUC IGEM 2013</h1>
-            <p>不要着急！我们可以弄完的啦～</p>
-
-            <a class="btn" href="http://jing.fm/tracks/225c3f.html">来，听首歌轻松下！</a>
+            <h1>WE DID IT!</h1>
+            <p>Constructing an Artificial Organelle in E.coli</p>
+            <a class="btn" href="http://2013.igem.org/Team:OUC-China/Results">learn more</a>
           </div>
         </li>
 
@@ -323,7 +325,7 @@ div#contentSub{
           </div>
         </li>
 
-        <li style="background-image: url('img/subway.jpg');">
+        <li style="background-color:#1abc9c;">
           <div class="inner">
             <h1>Come on! OUC IGEM 2013</h1>
             <p>不要着急！我们可以弄完的啦～</p>
@@ -332,7 +334,7 @@ div#contentSub{
           </div>
         </li>
 
-        <li style="background-image: url('img/shop.jpg');">
+        <li style="background-color:#1abc9c;">
           <div class="inner">
             <h1>Come on! OUC IGEM 2013</h1>
             <p>不要着急！我们可以弄完的啦～</p>
@@ -383,6 +385,8 @@ $(function() {
       }
 
       $('.banner').unslider({
+        delay: 4000,
+        keys: true, 
         arrows: true,
         fluid: true,
         dots: true
