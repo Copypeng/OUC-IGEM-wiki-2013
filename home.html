@@ -193,6 +193,7 @@ h1{
     left: 0;
     right: 0;
     bottom: 20px;
+    margin: 0;
   }
     .banner .dots li {
       display: inline-block;
@@ -311,7 +312,7 @@ h1{
         <li style="background-image: url('http://2013.igem.org/wiki/images/2/24/Slider-wenjun-result.jpg');">
           <div class="inner">
             <h1>WE DID IT!</h1>
-            <p>Constructing an Artificial Organelle in E.coli</p>
+            <p>Constructing an Artificial Organelle in <i>E.coli</i></p>
             <a class="btn" href="http://2013.igem.org/Team:OUC-China/Results">learn more</a>
           </div>
         </li>
@@ -385,7 +386,8 @@ $(function() {
       }
 
       $('.banner').unslider({
-        delay: 4000,
+        speed: 500, 
+        delay: 40000,
         keys: true, 
         arrows: true,
         fluid: true,
