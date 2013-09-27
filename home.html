@@ -4,8 +4,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" media="screen">
+<script src="http://code.jquery.com/jquery.min.js"></script>
 <style>
 /*the igem Global setting*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 #globalWrapper {
 	font-size: 100%;
 }
@@ -95,12 +104,128 @@ div#contentSub{
 .dropdown-submenu>a:after{display:block;content:" ";float:right;width:0;height:0;border-color:transparent;border-style:solid;border-width:5px 0 5px 5px;border-left-color:#cccccc;margin-top:5px;margin-right:-10px;}
 .dropdown-submenu:hover>a:after{border-left-color:#ffffff;}
 .dropdown-submenu.pull-left{float:none;}.dropdown-submenu.pull-left>.dropdown-menu{left:-100%;margin-left:10px;-webkit-border-radius:6px 0 6px 6px;-moz-border-radius:6px 0 6px 6px;border-radius:6px 0 6px 6px;}
-</style>
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
- <meta name="description" content="">
- <meta name="author" content="">
-<title>index</title>
+/*the unslider css*/
+.banner {
+  position: relative;
+  width: 100%;
+  overflow: auto;
+
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+
+  color: rgba(255,255,255,.6);
+  text-shadow: 0 0 1px rgba(0,0,0,.05), 0 1px 2px rgba(0,0,0,.3);
+
+  background: #1abc9c;
+  box-shadow: 0 1px 2px rgba(0,0,0,.25);
+}
+  .banner ul {
+    list-style: none;
+    width: 300%;
+  }
+  .banner ul li {
+    display: block;
+    float: left;
+    width: 33%;
+    min-height: 350px;
+
+    -o-background-size: 100% 100%;
+    -ms-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+
+    box-shadow: inset 0 -3px 6px rgba(0,0,0,.1);
+  }
+
+  .banner .inner {
+    padding: 160px 0 110px;
+  }
+
+  .banner h1, .banner h2 {
+    font-size: 40px;
+    line-height: 52px;
+
+    color: #fff;
+  }
+
+  .banner .btn {
+    display: inline-block;
+    margin: 25px 0 0;
+    padding: 9px 22px 7px;
+    clear: both;
+
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    border: 2px solid rgba(255,255,255,.4);
+    border-radius: 5px;
+  }
+    .banner .btn:hover {
+      background: rgba(255,255,255,.05);
+    }
+    .banner .btn:active {
+      -webkit-filter: drop-shadow(0 -1px 2px rgba(0,0,0,.5));
+      -moz-filter: drop-shadow(0 -1px 2px rgba(0,0,0,.5));
+      -ms-filter: drop-shadow(0 -1px 2px rgba(0,0,0,.5));
+      -o-filter: drop-shadow(0 -1px 2px rgba(0,0,0,.5));
+      filter: drop-shadow(0 -1px 2px rgba(0,0,0,.5));
+    }
+
+  .banner .btn, .banner .dot {
+    -webkit-filter: drop-shadow(0 1px 2px rgba(0,0,0,.3));
+    -moz-filter: drop-shadow(0 1px 2px rgba(0,0,0,.3));
+    -ms-filter: drop-shadow(0 1px 2px rgba(0,0,0,.3));
+    -o-filter: drop-shadow(0 1px 2px rgba(0,0,0,.3));
+    filter: drop-shadow(0 1px 2px rgba(0,0,0,.3));
+  }
+
+  .banner .dots {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+  }
+    .banner .dots li {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      margin: 0 4px;
+
+      text-indent: -999em;
+
+      border: 2px solid #fff;
+      border-radius: 6px;
+
+      cursor: pointer;
+      opacity: .4;
+
+      -webkit-transition: background .5s, opacity .5s;
+      -moz-transition: background .5s, opacity .5s;
+      transition: background .5s, opacity .5s;
+    }
+      .banner .dots li.active {
+        background: #fff;
+        opacity: 1;
+      }
+
+  .banner .arrows {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    color: #fff;
+  }
+    .banner .arrow {
+      display: inline;
+      padding-left: 10px;
+      cursor: pointer;
+    }
+</style>
 </head>
 <body >
 <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -177,7 +302,47 @@ div#contentSub{
 		</ul>
 	</div>
 </div>     
+<!--the slidershow begin-->
+<div class="banner">
+      <ul>
+        <li style="background-image: url('http://www.bootcss.com/p/unslider/img/sunset.jpg');">
+          <div class="inner">
+            <h1>Come on! OUC IGEM 2013</h1>
+            <p>不要着急！我们可以弄完的啦～</p>
 
+            <a class="btn" href="http://jing.fm/tracks/225c3f.html">来，听首歌轻松下！</a>
+          </div>
+        </li>
+
+        <li style="background-image: url('http://www.bootcss.com/p/unslider/img/wood.jpg');">
+          <div class="inner">
+            <h1>Come on! OUC IGEM 2013</h1>
+            <p>不要着急！我们可以弄完的啦～</p>
+
+            <a class="btn" href="http://jing.fm/tracks/225c3f.html">来，听首歌轻松下！</a>
+          </div>
+        </li>
+
+        <li style="background-image: url('img/subway.jpg');">
+          <div class="inner">
+            <h1>Come on! OUC IGEM 2013</h1>
+            <p>不要着急！我们可以弄完的啦～</p>
+
+            <a class="btn" href="http://jing.fm/tracks/225c3f.html">来，听首歌轻松下！</a>
+          </div>
+        </li>
+
+        <li style="background-image: url('img/shop.jpg');">
+          <div class="inner">
+            <h1>Come on! OUC IGEM 2013</h1>
+            <p>不要着急！我们可以弄完的啦～</p>
+
+            <a class="btn" href="http://jing.fm/tracks/225c3f.html">来，听首歌轻松下！</a>
+          </div>
+        </li>
+      </ul>
+  </div>
+  <!--the slidershow end-->
 	<div class="jumbotron">
         <h1>Abstract</h1>
         <p class="lead">Putting biological resources into production has now become a hot topic since the development of technology and the draining of natural resources. For example, research about biofuel and biochemistry is now flourishing. But biological products have drawbacks of being inefficient and not broad-spectrum. Inspired by eukaryotic membranous organelles, we aim to construct a prokaryotic membranous organelle to realize division of work inside the cell and improve the efficiency of production. 
@@ -205,15 +370,23 @@ How could a membrane be constructed in a Prokaryote? The answer may lie in this 
         <a class="btn btn-large btn-success" href="#">Learn more</a>
       </div>
       <hr>
-<script src="http://code.jquery.com/jquery.js"></script>
- <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
- <script>
-      !function ($) {
-        $(function(){
-          // carousel demo
-          $('#myCarousel').carousel()
-        })
-      }(window.jQuery)
- </script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="http://unslider.com/unslider.js"></script>
+<script>
+$(function() {
+    $('.banner').unslider();
+});
+</script>
+<script>
+      if(window.chrome) {
+        $('.banner li').css('background-size', '100% 100%');
+      }
+
+      $('.banner').unslider({
+        arrows: true,
+        fluid: true,
+        dots: true
+      });      
+    </script>
 </body>
 </html>
