@@ -1,0 +1,591 @@
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" media="screen">
+<link href="http://oucast.com/igem/css/bootstrap-responsive.css" rel="stylesheet" media="screen">
+<style>
+#top-section{
+   height:0px;
+    border:none;
+    width:980px;
+    margin:0 auto;
+    padding:0 0 0 0;
+    background-color:transparent;
+    overflow:hide;
+
+}
+#p-logo{display:none;}
+#search-controls{display:none;}
+#top{display:none;}
+.firstHeading{display:none;}
+#footer-box{display:none;}
+#catlinks{display:none;}
+div#contentSub{
+    display: none;
+    position: absolute;
+}
+#content h1.firstHeading {display: none;}
+#content
+{
+	border:none;
+	height: 100%;
+	margin:0;
+	padding:0;
+	width:100%;
+	position: absolute;
+	background-color: #FFFFFF;
+}
+
+{
+	margin:0;
+	padding:0;
+}
+
+li {
+      font-weight:normal;
+      font-size:12px;
+}
+
+#menubar {
+    background-color:transparent;
+    position: relative;
+    float:left;
+    white-space: nowrap;
+    top:-6px;
+    width: 490px;
+    z-index: 5000;
+    font-family: sans-serif;
+    font-size: 10%;
+    line-height: 1em;
+    z-index:99;
+}
+
+
+
+
+	 /* GLOBAL STYLES
+    -------------------------------------------------- */
+    /* Padding below the footer and lighter body text */
+
+
+    h1 {
+	color:#0099FF;
+	}
+    body {
+      padding-bottom: 40px;
+      color: #5a5a5a;
+	  background: #e5e5e5 url(image/moon.png);
+	  overflow-x: hidden;
+	  -webkit-user-select: none;
+	  -webkit-tap-highlight-color: rgba(0,0,0,0);
+    }
+
+    .jumbotron {
+        margin: 60px 0;
+        text-align: center;
+      }
+      .jumbotron h1 {
+        font-size: 72px;
+        line-height: 1;
+      }
+      .jumbotron .btn {
+        font-size: 21px;
+        padding: 14px 24px;
+      }
+
+      /* Supporting marketing content */
+      .marketing {
+        margin: 60px 0;
+      }
+      .marketing p + h4 {
+        margin-top: 28px;
+      }
+
+    /* CUSTOMIZE THE NAVBAR
+    -------------------------------------------------- */
+
+    /* Special class on .container surrounding .navbar, used for positioning it into place. */
+    .navbar-wrapper {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 10;
+      margin-top: 20px;
+      margin-bottom: -90px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
+    }
+    .navbar-wrapper .navbar {
+
+    }
+
+    /* Remove border and change up box shadow for more contrast */
+    .navbar .navbar-inner {
+      border: 0;
+      -webkit-box-shadow: 0 2px 20px rgba(10,0,0,.25);
+         -moz-box-shadow: 0 2px 20px rgba(10,0,0,.25);
+              box-shadow: 0 2px 20px rgba(10,0,0,.25);
+    }
+
+    /* Downsize the brand/project name a bit */
+    .navbar .brand {
+      padding: 14px 20px 16px; /* Increase vertical padding to match navbar links */
+      font-size: 16px;
+      font-weight: bold;
+      text-shadow: 0 -1px 0 rgba(0,0,0,.5);
+    }
+
+    /* Navbar links: increase padding for taller navbar */
+    .navbar .nav > li > a {
+      padding: 15px 20px;
+    }
+
+    /* Offset the responsive button for proper vertical alignment */
+    .navbar .btn-navbar {
+      margin-top: 10px;
+    }
+
+
+
+    /* CUSTOMIZE THE CAROUSEL
+    -------------------------------------------------- */
+
+    /* Carousel base class */
+    .carousel {
+      margin-bottom: 60px;
+    }
+
+    .carousel .container {
+      position: relative;
+      z-index: 9;
+    }
+
+    .carousel-control {
+      height: 80px;
+      margin-top: 0;
+      font-size: 120px;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+      background-color: transparent;
+      border: 0;
+      z-index: 10;
+    }
+
+    .carousel .item {
+      height: 400px;
+    }
+    .carousel img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      height: 400px;
+    }
+
+    .carousel-caption {
+      background-color: transparent;
+      position: static;
+      max-width: 550px;
+      padding: 0 20px;
+      margin-top: 200px;
+    }
+    .carousel-caption h1,
+    .carousel-caption .lead {
+      margin: 0;
+      line-height: 1.25;
+      color: #fff;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+    }
+    .carousel-caption .btn {
+      margin-top: 10px;
+    }
+
+
+
+    /* MARKETING CONTENT
+    -------------------------------------------------- */
+
+    /* Center align the text within the three columns below the carousel */
+    .marketing .span6 {
+      text-align: center;
+    }
+    .marketing h2 {
+      font-weight: normal;
+      margin-left: 200px;
+      margin-right: 60px;
+    }
+    .marketing .span6 p {
+      margin-left: 200px;
+      margin-right: 60px;
+    }
+
+
+    /* Featurettes
+    ------------------------- */
+
+    .featurette-divider {
+      margin: 80px 0; /* Space out the Bootstrap <hr> more */
+    }
+    .featurette {
+      padding-top: 120px; /* Vertically center images part 1: add padding above and below text. */
+      overflow: hidden; /* Vertically center images part 2: clear their floats. */
+    }
+    .featurette-image {
+      margin-top: -120px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
+    }
+
+    /* Give some space on the sides of the floated elements so text doesn't run right into it. */
+    .featurette-image.pull-left {
+      margin-right: 40px;
+    }
+    .featurette-image.pull-right {
+      margin-left: 40px;
+    }
+
+    /* Thin out the marketing headings */
+    .featurette-heading {
+      font-size: 50px;
+      font-weight: 300;
+      line-height: 1;
+      letter-spacing: -1px;
+    }
+
+
+
+    /* RESPONSIVE CSS
+    -------------------------------------------------- */
+
+    @media (max-width: 979px) {
+
+      .container.navbar-wrapper {
+        margin-bottom: 0;
+        width: auto;
+      }
+      .navbar-inner {
+        border-radius: 0;
+        margin: -20px 0;
+      }
+
+      .carousel .item {
+        height: 400px;
+      }
+      .carousel img {
+        width: auto;
+        height: 400px;
+      }
+
+      .featurette {
+        height: auto;
+        padding: 0;
+      }
+      .featurette-image.pull-left,
+      .featurette-image.pull-right {
+        display: block;
+        float: none;
+        max-width: 40%;
+        margin: 0 auto 20px;
+      }
+    }
+
+
+    @media (max-width: 767px) {
+
+      .navbar-inner {
+        margin: -20px;
+      }
+
+      .carousel {
+        margin-left: -20px;
+        margin-right: -20px;
+      }
+      .carousel .container {
+
+      }
+      .carousel .item {
+        height: 400px;
+      }
+      .carousel img {
+        height: 400px;
+      }
+      .carousel-caption {
+        width: 65%;
+        padding: 0 70px;
+        margin-top: 100px;
+      }
+      .carousel-caption h1 {
+        font-size: 30px;
+      }
+      .carousel-caption .lead,
+      .carousel-caption .btn {
+        font-size: 18px;
+      }
+
+      .marketing .span4 + .span4 {
+        margin-top: 40px;
+      }
+
+      .featurette-heading {
+        font-size: 30px;
+      }
+      .featurette .lead {
+        font-size: 18px;
+        line-height: 1.5;
+      }
+
+    }
+	
+	/* = 通用 Global
+----------------------------------------------- */
+a:not(.btn) {
+	color: #00699E;
+	-webkit-transition: 300ms;
+	-moz-transition: 300ms;
+	transition: 300ms;
+}
+a:hover:not(.btn),
+a:active:not(.btn) {
+	color: #9E0000;
+	text-decoration: none;
+	-webkit-transform: translateY(-8px);
+	-moz-transform: translateY(-8px);
+	transform: translateY(-8px);
+}
+
+hr.soften {
+	height: 1px;
+	margin: 30px 0;
+	background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
+	background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
+	background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
+	background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
+	border: 0;
+}
+
+
+.nav a {
+	-webkit-transition: 500ms;
+	-moz-transition: 500ms;
+	transition: 500ms;
+}
+header {
+	margin-top: 40px;	
+}
+.hero-unit {
+	background: url(/images/cover-5.jpg);
+	background-size: cover;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/cover-5.jpg', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/cover-5.jpg', sizingMethod='scale')";
+	color: #fff;
+	height: 100px;	
+	margin-bottom: 0;
+}
+.hero-unit h1 {
+	/* font: 88px Minion,'Optima', "Times New Roman", Times, serif; */
+	text-align: center;
+	text-shadow: 1px 1px 10px black;
+}
+.hero-unit img {
+	max-width: 500px;
+	-webkit-animation: title-in 1s ease-out 0 1 forwards;
+	-webkit-transition: 500ms;
+	-moz-transition: 500ms;
+	transition: 500ms;
+
+}
+.hero-unit img:hover {
+	-webkit-transform: translateY(-5px) scale(1.05) rotate(2deg);
+	-moz-transform: translateY(-5px) scale(1.05) rotate(2deg);
+	transform: translateY(-5px) scale(1.05) rotate(2deg);
+}
+
+	</style>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta name="description" content="">
+ <meta name="author" content="">
+<title>index</title>
+</head>
+<body >
+
+
+
+<div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+		<div class="row"><div class="span3"><a href="http://2013.igem.org/Main_Page"><img src="http://2013.igem.org/wiki/images/6/6a/Ouc-igem1.jpg" alt="logo" style="width:70px;height:50px;margin-top:0px;padding:0 0 0 0;" class="brand png"></a></div>
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+            <div class="nav-collapse collapse">
+                  <ul class="nav pull-right">
+				  <li class="active"><a href="http://2013.igem.org/Team:OUC-China"><font size="4.5px">Home</font></a></li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" id="drop4" role="button" data-toggle="dropdown" href="#"><font size="4.5px">Project</font><b class="caret"></b>
+				</a>
+                <ul id="menu1" class="dropdown-menu" role="menu" aria-labelledby="drop4">
+				 <li role="presentation"><a role="menuitem" tabindex="-1" href="http://2013.igem.org/Team:OUC-China/Overview">Overview</a>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="http://2013.igem.org/Team:OUC-China/Achievement">Achievement & judge criteria</a>
+                  <li class="dropdown-submenu">
+                  <a tabindex="-1" href="#">Intercellular compartment</a>
+				  <ul class="dropdown-menu">
+                      <li><a tabindex="-1" href="http://2013.igem.org/Team:OUC-China/Review">Review</a></li>
+                      <li><a tabindex="-1" href="http://2013.igem.org/Team:OUC-China/Design">Design</a></li>
+					  <li><a tabindex="-1" href="http://2013.igem.org/Team:OUC-China/Microfluidics">Microfluidics</a></li>
+					  <li><a tabindex="-1" href="http://2013.igem.org/Team:OUC-China/Results">Results</a></li>
+
+					  </ul>
+				  </li>
+                  <li class="dropdown-submenu">
+                  <a tabindex="-1" href="#">RNA guardian</a>
+				  <ul class="dropdown-menu">
+                      <li><a tabindex="-1" href="http://2013.igem.org/Team:OUC-China/Instruction">Instruction</a></li>
+                      <li><a tabindex="-1" href="http://2013.igem.org/Team:OUC-China/RNA guardian/Design">Design</a></li>
+					  <li><a tabindex="-1" href="http://2013.igem.org/Team:OUC-China/RNA guardian/Results">Result</a></li>
+					  <li><a tabindex="-1" href="http://2013.igem.org/Team:OUC-China/Reference">Reference</a></li>
+					  
+
+					  </ul>
+				  </li>
+				  <li role="presentation"><a role="menuitem" tabindex="-1" href="http://2013.igem.org/Team:OUC-China/Part description">Part description</a></li>
+                  <li role="presentation" class="divider"></li>
+				   <li role="presentation"><a role="menuitem" tabindex="-1" href="http://2013.igem.org/Team:OUC-China/Future work">Future work</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" id="drop5" role="button" data-toggle="dropdown" href="#"><font size="4.5px">Modeling</font><b class="caret"></b></a>
+                <ul id="menu2" class="dropdown-menu" role="menu" aria-labelledby="drop5">
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="http://2013.igem.org/Team:OUC-China/Magnetic Analysis">Magnetic Analysis</a></li>
+                  <li role="presentation" class="divider"></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="http://2013.igem.org/Team:OUC-China/Model in RNA guardian">Model in RNA guardian</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a  href="http://2013.igem.org/Team:OUC-China/Human Practice"><font size="4.5px">Human Practice</font></a>
+                
+              </li>
+				<li class="dropdown">
+                <a class="dropdown-toggle" id="drop5" role="button" data-toggle="dropdown" href="#"><font size="4.5px">Team</font><b class="caret"></b></a>
+               <ul id="menu2" class="dropdown-menu" role="menu" aria-labelledby="drop5">
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="http://2013.igem.org/Team:OUC-China/Members">Members</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="http://2013.igem.org/Team:OUC-China/Instructors">Instructors</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="http://2013.igem.org/Team:OUC-China/Advisor">Advisor</a></li>
+				  <li role="presentation"><a role="menuitem" tabindex="-1" href="http://2013.igem.org/Team:OUC-China/Lab">Lab</a></li>
+				  <li role="presentation"><a role="menuitem" tabindex="-1" href="http://2013.igem.org/Team:OUC-China/Acknowledgement">Acknowledgement</a></li>
+				  </ul>
+              </li>
+			  <li class="dropdown">
+                <a  href="http://2013.igem.org/Team:OUC-China/Safety"><font size="4.5px">Safety</font></a>
+                
+              </li>
+			  <li class="dropdown">
+                <a class="dropdown-toggle" id="drop5" role="button" data-toggle="dropdown" href="#"><font size="4.5px">Notebook</font><b class="caret"></b></a>
+                <ul id="menu2" class="dropdown-menu" role="menu" aria-labelledby="drop5">
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="http://2013.igem.org/Team:OUC-China/Lab note">Lab note</a></li>
+                  <li role="presentation" class="divider"></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="http://2013.igem.org/Team:OUC-China/Protocol">Protocol</a></li>
+                </ul>
+              </li>
+			  </ul>
+</div>
+          </div>
+        </div>
+      </div>
+    </div>
+<br><br>
+
+	 <div id="myCarousel" class="carousel slide">
+	 	<ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0"  class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+    <li data-target="#myCarousel" data-slide-to="3"></li>
+  </ol>
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="http://2013.igem.org/wiki/images/d/df/Ouc-slide-01.jpg" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+              <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <a class="btn btn-large btn-primary" href="#">Sign up today</a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="http://2013.igem.org/wiki/images/2/21/Ouc-slide-02.jpg" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+             
+              <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <a class="btn btn-large btn-primary" href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+        <div class="item">
+          <img src="http://2013.igem.org/wiki/images/f/f2/Ouc-slide-03.jpg" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+              
+              <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <a class="btn btn-large btn-primary" href="#">Browse gallery</a>
+            </div>
+          </div>
+        </div>
+         <div class="item">
+          <img src="http://2013.igem.org/wiki/images/f/f2/Ouc-slide-02.jpg" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+             
+              <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <a class="btn btn-large btn-primary" href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev" data-interval="1000" data-pause="hover">&lsaquo;</a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+    </div>
+    
+     
+	<div class="jumbotron">
+        <h1>Abstract</h1>
+        <p class="lead">Putting biological resources into production has now become a hot topic since the development of technology and the draining of natural resources. For example, research about biofuel and biochemistry is now flourishing. But biological products have drawbacks of being inefficient and not broad-spectrum. Inspired by eukaryotic membranous organelles, we aim to construct a prokaryotic membranous organelle to realize division of work inside the cell and improve the efficiency of production. 
+How could a membrane be constructed in a Prokaryote? The answer may lie in this species: Magnetosprillum Magneticum, which can form a natural intracellular membrane. But this bacteria is slow-growing and requires demanding culture conditions, so the purpose of our project is to reconstruct the magnetosome membrane in E.coli, creating better conditions for efficient biological production.</p>
+        <a class="btn btn-large btn-success" href="#">Learn more</a>
+      </div>
+	  <hr>
+    
+	<div class="jumbotron">
+        <h1>Specialist of our project</h1>
+        <p class="lead">1.We designed an artificial prokaryotic membranous organelle which is capable of anchoring proteins, opening up new possibilities for intracellular biochemistry reactions.<br/>2.We took advantage of the 3D structure of RNA, using ribosomes as a barrier to stabilize RNA.<br/>3.We used Microfluidic Technology to detect the magnetism of our magnetic bacteria, Magnetospirillum Magneticum.<br/>4.We preserved Magnetospirillum Magneticum AMB-1 mamAB genes in E.coli, prevented the genes lose when AMB-1 strain was cultured in High oxygen partial pressure environment.
+		</p>
+        <a class="btn btn-large btn-success" href="#">Learn more</a>
+      </div>
+	  <hr>
+	  
+      <div class="jumbotron">
+        <header id="banner" class="hero-unit no-radius">
+	<div class="container text-center">
+        <h4><img src="http://2013.igem.org/wiki/images/6/6f/Ouc-title.png" alt="OUC-China"></h4>
+    </div>
+</header>
+
+        <p class="lead" ><font color="#0099FF">Reconstructing the Magnetosome Membrane in E. coli</font></p>
+        <a class="btn btn-large btn-success" href="#">Learn more</a>
+      </div>
+
+      <hr>
+<script src="http://code.jquery.com/jquery.js"></script>
+ <script src="http://oucast.com/igem/js/bootstrap.min.js"></script>
+ <script>
+      !function ($) {
+        $(function(){
+          // carousel demo
+          $('#myCarousel').carousel()
+        })
+      }(window.jQuery)
+    </script>
+    <script src="http://oucast.com/igem/js/bootstrap.holder.js"></script>
+	
+</body>
+</html>
