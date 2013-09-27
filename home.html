@@ -24,114 +24,6 @@ div#contentSub{
     position: absolute;
 }
 #content h1.firstHeading {display: none;}
-#content
-{
-	border:none;
-	height: 100%;
-	margin:0;
-	padding:0;
-	width:100%;
-	position: absolute;
-	background-color: #FFFFFF;
-}
-
-{
-	margin:0;
-	padding:0;
-}
-
-li {
-      font-weight:normal;
-      font-size:12px;
-}
-
-#menubar {
-    background-color:transparent;
-    position: relative;
-    float:left;
-    white-space: nowrap;
-    top:-6px;
-    width: 490px;
-    z-index: 5000;
-    font-family: sans-serif;
-    font-size: 10%;
-    line-height: 1em;
-    z-index:99;
-}
-	 /* GLOBAL STYLES
-    -------------------------------------------------- */
-    /* Padding below the footer and lighter body text */
-    h1 {
-	color:#0099FF;
-	}
-    .jumbotron {
-        margin: 60px 0;
-        text-align: center;
-      }
-      .jumbotron h1 {
-        font-size: 72px;
-        line-height: 1;
-      }
-      .jumbotron .btn {
-        font-size: 21px;
-        padding: 14px 24px;
-      }
-
-      /* Supporting marketing content */
-      .marketing {
-        margin: 60px 0;
-      }
-      .marketing p + h4 {
-        margin-top: 28px;
-      }
-
-    /* CUSTOMIZE THE NAVBAR
-    -------------------------------------------------- */
-
-    /* Special class on .container surrounding .navbar, used for positioning it into place. */
-    .navbar-wrapper {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      z-index: 10;
-      margin-top: 20px;
-      margin-bottom: -90px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
-    }
-    .navbar-wrapper .navbar {
-    }
-
-    /* Remove border and change up box shadow for more contrast */
-    .navbar .navbar-inner {
-      border: 0;
-      -webkit-box-shadow: 0 2px 20px rgba(10,0,0,.25);
-         -moz-box-shadow: 0 2px 20px rgba(10,0,0,.25);
-              box-shadow: 0 2px 20px rgba(10,0,0,.25);
-    }
-
-    /* Downsize the brand/project name a bit */
-    .navbar .brand {
-      padding: 14px 20px 16px; /* Increase vertical padding to match navbar links */
-      font-size: 16px;
-      font-weight: bold;
-      text-shadow: 0 -1px 0 rgba(0,0,0,.5);
-    }
-
-    /* Navbar links: increase padding for taller navbar */
-    .navbar .nav > li > a {
-      padding: 15px 20px;
-    }
-
-    /* Offset the responsive button for proper vertical alignment */
-    .navbar .btn-navbar {
-      margin-top: 10px;
-    }
-
-
-
-    /* CUSTOMIZE THE CAROUSEL
-    -------------------------------------------------- */
-
     /* Carousel base class */
     .carousel {
       margin-bottom: 60px;
@@ -180,9 +72,6 @@ li {
     .carousel-caption .btn {
       margin-top: 10px;
     }
-
-
-
     /* MARKETING CONTENT
     -------------------------------------------------- */
 
@@ -199,8 +88,6 @@ li {
       margin-left: 200px;
       margin-right: 60px;
     }
-
-
     /* Featurettes
     ------------------------- */
 
@@ -230,8 +117,6 @@ li {
       line-height: 1;
       letter-spacing: -1px;
     }
-
-
 
     /* RESPONSIVE CSS
     -------------------------------------------------- */
@@ -315,76 +200,60 @@ li {
 
     }
 	
-	/* = 通用 Global
+	/*the nav settings
 ----------------------------------------------- */
-a:not(.btn) {
-	color: #00699E;
-	-webkit-transition: 300ms;
-	-moz-transition: 300ms;
-	transition: 300ms;
+.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus{
+	color: #1abc9c;
+	background-color: transparent;
 }
-a:hover:not(.btn),
-a:active:not(.btn) {
-	color: #9E0000;
-	text-decoration: none;
-	-webkit-transform: translateY(-8px);
-	-moz-transform: translateY(-8px);
-	transform: translateY(-8px);
-}
-
-hr.soften {
-	height: 1px;
-	margin: 30px 0;
-	background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
-	background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
-	background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
-	background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
-	border: 0;
-}
-
-
-.nav a {
-	-webkit-transition: 500ms;
-	-moz-transition: 500ms;
-	transition: 500ms;
-}
-header {
-	margin-top: 40px;	
-}
-.hero-unit {
-	background: url(/images/cover-5.jpg);
-	background-size: cover;
-	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/cover-5.jpg', sizingMethod='scale');
-	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/cover-5.jpg', sizingMethod='scale')";
+.navbar-inverse .navbar-nav>li>a{
 	color: #fff;
-	height: 100px;	
-	margin-bottom: 0;
 }
-.hero-unit h1 {
-	/* font: 88px Minion,'Optima', "Times New Roman", Times, serif; */
-	text-align: center;
-	text-shadow: 1px 1px 10px black;
+.navbar-inverse .navbar-nav>li>a:hover{
+	color: #1abc9c;
+	background-color:transparent;
 }
-.hero-unit img {
-	max-width: 500px;
-	-webkit-animation: title-in 1s ease-out 0 1 forwards;
-	-webkit-transition: 500ms;
-	-moz-transition: 500ms;
-	transition: 500ms;
+.navbar-inverse .navbar-brand{
+          color: #fff;
+          padding: 0;
+}
+.navbar-inverse .navbar-brand img{
+  height: 50px;
+  padding-left: 90px;
+}
+.navbar-inverse .navbar-brand p{
+  padding:15px 30px;
+  margin:0;
+}
+.navbar-inverse{
+	border-color: transparent;
+	background: #34495e;
+	font-weight: bold;
+	filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+.dropdown-menu{
+	background-color:#34495e;
+	border:none;
+	-webkit-box-shadow:none;
+	box-shadow: none;
+}
+.dropdown-menu>li>a{
+	color: #fff;
+	font-weight: bold;
+}
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus{
+	color:#1abc9c;
+	background-color: transparent;
+}
 
-}
-.hero-unit img:hover {
-	-webkit-transform: translateY(-5px) scale(1.05) rotate(2deg);
-	-moz-transform: translateY(-5px) scale(1.05) rotate(2deg);
-	transform: translateY(-5px) scale(1.05) rotate(2deg);
-}
+/*add dropdown-submenu to btV3*/
 .dropdown-submenu{position:relative;}
 .dropdown-submenu>.dropdown-menu{top:0;left:100%;margin-top:-6px;margin-left:-1px;-webkit-border-radius:0 6px 6px 6px;-moz-border-radius:0 6px 6px 6px;border-radius:0 6px 6px 6px;}
 .dropdown-submenu:hover>.dropdown-menu{display:block;}
 .dropdown-submenu>a:after{display:block;content:" ";float:right;width:0;height:0;border-color:transparent;border-style:solid;border-width:5px 0 5px 5px;border-left-color:#cccccc;margin-top:5px;margin-right:-10px;}
 .dropdown-submenu:hover>a:after{border-left-color:#ffffff;}
 .dropdown-submenu.pull-left{float:none;}.dropdown-submenu.pull-left>.dropdown-menu{left:-100%;margin-left:10px;-webkit-border-radius:6px 0 6px 6px;-moz-border-radius:6px 0 6px 6px;border-radius:6px 0 6px 6px;}
-	</style>
+</style>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <meta name="description" content="">
@@ -392,19 +261,24 @@ header {
 <title>index</title>
 </head>
 <body >
-<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 	<div class="navbar-header">
 		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-			<span class="sr-only">Toggle navigation</span>
+			<span class="sr-only">The navigation</span>
       		<span class="icon-bar"></span>
       		<span class="icon-bar"></span>
       		<span class="icon-bar"></span>
       	</button>
-          	<a class="navbar-brand" href="#">OUC-IGEM</a>
-    </div>
+    <a class="navbar-brand" href="http://igem.org/Team_Wikis?year=2013">
+      <img src="http://2013.igem.org/wiki/images/7/7d/Ouc-igem1.png">
+    </a>
+    <a class="navbar-brand" href="http://2013.igem.org/Team:OUC-China">
+      <p>OUC-China IGEM 2013</p>
+    </a>
+  </div>
     <div class="collapse navbar-collapse navbar-ex1-collapse">
     	<ul class="nav navbar-nav pull-right">
-			<li><a href="./">Home</a></li>
+			<li><a href="http://2013.igem.org/Team:OUC-China">Home</a></li>
             <li class="dropdown" role="menu" aria-labelledby="dropdownMenu">
             	<a class="dropdown-toggle" data-toggle="dropdown" href="#">Project<b class="caret"></b></a>
             	<ul class="dropdown-menu">
@@ -429,7 +303,6 @@ header {
 					  </ul>
 				  </li>
 				  <li role="presentation"><a role="menuitem" tabindex="-1" href="http://2013.igem.org/Team:OUC-China/Part description">Part description</a></li>
-                  <li role="presentation" class="divider"></li>
 				   <li role="presentation"><a role="menuitem" tabindex="-1" href="http://2013.igem.org/Team:OUC-China/Future work">Future work</a></li>
                 </ul>
            	</li>
@@ -437,7 +310,6 @@ header {
             	<a class="dropdown-toggle" data-toggle="dropdown" href="#">Modeling<b class="caret"></b></a>
                 <ul class="dropdown-menu">
                   <li role="presentation"><a role="menuitem" tabindex="-1" href="http://2013.igem.org/Team:OUC-China/Magnetic Analysis">Magnetic Analysis</a></li>
-                  <li role="presentation" class="divider"></li>
                   <li role="presentation"><a role="menuitem" tabindex="-1" href="http://2013.igem.org/Team:OUC-China/Model in RNA guardian">Model in RNA guardian</a></li>
                 </ul>
             </li>
@@ -457,7 +329,6 @@ header {
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#">Notebook<b class="caret"></b></a>
                 <ul id="menu2" class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
                   <li role="presentation"><a role="menuitem" tabindex="-1" href="http://2013.igem.org/Team:OUC-China/Lab note">Lab note</a></li>
-                  <li role="presentation" class="divider"></li>
                   <li role="presentation"><a role="menuitem" tabindex="-1" href="http://2013.igem.org/Team:OUC-China/Protocol">Protocol</a></li>
                 </ul>
              </li>
