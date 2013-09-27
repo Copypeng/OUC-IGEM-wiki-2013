@@ -24,6 +24,7 @@ body{
 h1, h2, h3, h4, h5, h6{
   padding-top: 0;
   padding-bottom: 0;
+  color: #34495e;
 }
 #globalWrapper {
   font-size: 100%;
@@ -57,6 +58,10 @@ div#contentSub{
   width:100%;
   position: absolute;
   background-color: #FFFFFF;
+  color: #34495e;
+}
+a:visited{
+  color: #fff;
 }
 /*the nav settings
 ----------------------------------------------- */
@@ -238,9 +243,6 @@ div#contentSub{
 .features {
   overflow: hidden;
   padding: 50px 0;
-
-  background: #f7f7f6;
-  box-shadow: inset 0 -1px 3px rgba(0,0,0,.03);
 }
   .features li {
     position: relative;
@@ -412,23 +414,14 @@ div#contentSub{
         </li>
       </ul>
     </div>
-  <div class="container jumbotron">
-        <h1>Abstract</h1>
-        <p class="lead">Putting biological resources into production has now become a hot topic since the development of technology and the draining of natural resources. For example, research about biofuel and biochemistry is now flourishing. But biological products have drawbacks of being inefficient and not broad-spectrum. Inspired by eukaryotic membranous organelles, we aim to construct a prokaryotic membranous organelle to realize division of work inside the cell and improve the efficiency of production. 
+  <div class="container">
+        <h3><b>Introduction</b></h3><hr>
+        <p>Putting biological resources into production has now become a hot topic since the development of technology and the draining of natural resources. For example, research about biofuel and biochemistry is now flourishing. But biological products have drawbacks of being inefficient and not broad-spectrum. Inspired by eukaryotic membranous organelles, we aim to construct a prokaryotic membranous organelle to realize division of work inside the cell and improve the efficiency of production. 
 How could a membrane be constructed in a Prokaryote? The answer may lie in this species: <i>Magnetosprillum Magneticum</i>, which can form a natural intracellular membrane. But this bacteria is slow-growing and requires demanding culture conditions, so the purpose of our project is to reconstruct the magnetosome membrane in <i><i>E.coli</i></i>, creating better conditions for efficient biological production.</p>
-        <a class="btn btn-large btn-success" href="#">Learn more</a>
-      </div>
-    <hr>
-      <div class="jumbotron">
-        <header id="banner" class="hero-unit no-radius">
-  <div class="container text-center">
-        <h4><img src="http://2013.igem.org/wiki/images/6/6f/Ouc-title.png" alt="OUC-China"></h4>
-    </div>
-</header>
-
-        <p class="lead" ><font color="#0099FF">Reconstructing the Magnetosome Membrane in E. coli</font></p>
-        <a class="btn btn-large btn-success" href="#">Learn more</a>
-      </div>
+        <p style="text-align:center"><a class="btn btn-large btn-info" href="http://2013.igem.org/Team:OUC-China/Overview">Learn more</a></p>
+  </div>
+  <div class="container">
+  </div>
 <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
 <script src="http://unslider.com/unslider.js"></script>
 <script>
@@ -445,7 +438,6 @@ $(function() {
         speed: 500, 
         delay: 40000,
         keys: true, 
-        arrows: true,
         fluid: true,
         dots: true
       });      
