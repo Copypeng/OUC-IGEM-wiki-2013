@@ -275,9 +275,50 @@ a:visited{
   margin: 0 auto;
   max-width: 1170px;
 }
+/*footer*/
+footer{
+  margin-top: 100px;
+  background-color: #eceff1;
+  color: #bdc1c5;
+  font-size: 17px;
+  padding: 0;
+}
+.footer-banner{
+  background-color: #34495e;
+  color: #58F8D9;
+  margin-left: 42px;
+  min-height: 286px;
+  padding: 0 30px 30px;
+}
+.footer-banner ul{
+  list-style-type: none;
+}
+.footer-banner ul li{
+  border-bottom:1px solid rgba(57, 107, 97, 0.53);
+  line-height: 19px;
+  padding: 6px 0;
+}
+.footer-banner a{
+  color: #58F8D9;
+}
+.footer-banner a:hover{
+  text-decoration: none;
+}
+.footer-title{
+  margin: 0 0 22px;
+  padding-top: 21px;
+  color: #1abc9c;
+  font-weight: bold;
+}
+.footerleft a{
+  color: #bdc1c5;
+}
+.footerleft a:visited {
+  color: #bdc1c5;
+}
 </style>
 </head>
-<body >
+<body>
 <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
   <div class="navbar-header">
     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -414,14 +455,40 @@ a:visited{
         </li>
       </ul>
     </div>
-  <div class="container">
+<div class="container">
         <h3><b>Introduction</b></h3><hr>
         <p>Putting biological resources into production has now become a hot topic since the development of technology and the draining of natural resources. For example, research about biofuel and biochemistry is now flourishing. But biological products have drawbacks of being inefficient and not broad-spectrum. Inspired by eukaryotic membranous organelles, we aim to construct a prokaryotic membranous organelle to realize division of work inside the cell and improve the efficiency of production. 
 How could a membrane be constructed in a Prokaryote? The answer may lie in this species: <i>Magnetosprillum Magneticum</i>, which can form a natural intracellular membrane. But this bacteria is slow-growing and requires demanding culture conditions, so the purpose of our project is to reconstruct the magnetosome membrane in <i><i>E.coli</i></i>, creating better conditions for efficient biological production.</p>
         <p style="text-align:center"><a class="btn btn-large btn-info" href="http://2013.igem.org/Team:OUC-China/Overview">Learn more</a></p>
+</div>
+<!--footer-->
+<footer>
+<div class="container">
+<div class="row">
+<div class="col-md-1"></div>
+<div class="col-md-6 footerleft">
+  <h3 class="footer-title" style="color:#bdc1c5;">About</h3>
+  <p>Thanks to:</p>
+  <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bootstrap&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Flat-ui&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unslider</p>
+  <p>Designed and built by <a href="http://copypeng.com">@PengYong</a> and <a href="http://www.renren.com/345094399/profile?ref=opensearch_normal#notice">@ZhenYuchen.</p>
+  <p>Code licensed under Apache License v2.0</p>
+</div>
+<div class="col-md-4">
+  <div class="footer-banner">
+    <h3 class="footer-title">Contact US</h3>
+    <ul>
+      <li>E-mail:<a href="mailto:oucigem@163.com"> oucigem@163.com</a></li>
+      <li><a href="http://oucast.com"> Official website</a></li>
+      <li><a href="http://www.renren.com/oast"> Find us on Renren</a></li>
+      <li><a href="http://weibo.com/u/2805858363"> Find us on Weibo</a></li>
+      <li><a href="https://www.google.com/maps?q=+36.062884,+120.335542&sll=36.1360706,120.3648376&sspn=0.36606958894334163,0.9386959091014536&t=m&z=16">Find us on Google Map</a></li>
+    </ul>
   </div>
-  <div class="container">
-  </div>
+</div>
+<div class="col-md-1"></div>
+</div>
+</div>
+</footer>
 <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
 <script src="http://unslider.com/unslider.js"></script>
 <script>
