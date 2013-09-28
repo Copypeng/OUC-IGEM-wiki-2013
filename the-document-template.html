@@ -1,0 +1,315 @@
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" media="screen">
+<style type="text/css">
+/*the igem Global setting*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#menubar{
+  display: none;
+}
+body{
+  color: #34495e;
+  padding-top: 80px;
+}
+#bodyContent h1, #bodyContent h2{
+  margin-bottom:0;
+}
+h1, h2, h3, h4, h5, h6{
+  padding-top: 0;
+  padding-bottom: 0;
+  color: #34495e;
+}
+#globalWrapper {
+  font-size: 100%;
+}
+#top-section{
+   height:0px;
+    border:none;
+    width:980px;
+    margin:0 auto;
+    padding:0 0 0 0;
+    background-color:transparent;
+    overflow:hide;
+}
+#p-logo{display:none;}
+#search-controls{display:none;}
+#top{display:none;}
+.firstHeading{display:none;}
+#footer-box{display:none;}
+#catlinks{display:none;}
+div#contentSub{
+    display: none;
+    position: absolute;
+}
+#content h1.firstHeading {display: none;}
+#content
+{
+  border:none;
+  height: 100%;
+  margin:0;
+  padding:0;
+  width:100%;
+  position: absolute;
+  background-color: #FFFFFF;
+  color: #34495e;
+}
+a:visited{
+  color: #fff;
+}
+/*the nav settings
+----------------------------------------------- */
+.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus{
+  color: #1abc9c;
+  background-color: transparent;
+}
+.navbar-inverse .navbar-nav>li>a{
+  color: #fff;
+}
+.navbar-inverse .navbar-nav>li>a:hover{
+  color: #1abc9c;
+  background-color:transparent;
+}
+.navbar-inverse .navbar-brand{
+          color: #fff;
+          padding: 0;
+}
+.navbar-inverse .navbar-brand img{
+  height: 50px;
+  padding-left: 90px;
+}
+.navbar-inverse .navbar-brand p{
+  padding:12px 30px;
+  margin:0;
+}
+.navbar-inverse .navbar-brand:hover{
+  color: #1abc9c;
+}
+.navbar-inverse{
+  border-color: transparent;
+  background: #34495e;
+  font-weight: bold;
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+.dropdown-menu{
+  background-color:#34495e;
+  border:none;
+  -webkit-box-shadow:none;
+  box-shadow: none;
+}
+.dropdown-menu>li>a{
+  color: #fff;
+  font-weight: bold;
+}
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus{
+  color:#1abc9c;
+  background-color: transparent;
+}
+
+/*add dropdown-submenu to btV3*/
+.dropdown-submenu{position:relative;}
+.dropdown-submenu>.dropdown-menu{top:0;left:100%;margin-top:-6px;margin-left:-1px;-webkit-border-radius:0 6px 6px 6px;-moz-border-radius:0 6px 6px 6px;border-radius:0 6px 6px 6px;}
+.dropdown-submenu:hover>.dropdown-menu{display:block;}
+.dropdown-submenu>a:after{display:block;content:" ";float:right;width:0;height:0;border-color:transparent;border-style:solid;border-width:5px 0 5px 5px;border-left-color:#cccccc;margin-top:5px;margin-right:-10px;}
+.dropdown-submenu:hover>a:after{border-left-color:#ffffff;}
+.dropdown-submenu.pull-left{float:none;}.dropdown-submenu.pull-left>.dropdown-menu{left:-100%;margin-left:10px;-webkit-border-radius:6px 0 6px 6px;-moz-border-radius:6px 0 6px 6px;border-radius:6px 0 6px 6px;}
+
+/*footer*/
+footer{
+  margin-top: 100px;
+  background-color: #eceff1;
+  color: #bdc1c5;
+  font-size: 17px;
+  padding: 0;
+}
+.footer-banner{
+  background-color: #34495e;
+  color: #58F8D9;
+  margin-left: 42px;
+  min-height: 286px;
+  padding: 0 30px 30px;
+}
+.footer-banner ul{
+  list-style-type: none;
+}
+.footer-banner ul li{
+  border-bottom:1px solid rgba(57, 107, 97, 0.53);
+  line-height: 19px;
+  padding: 6px 0;
+}
+.footer-banner a{
+  color: #58F8D9;
+}
+.footer-banner a:hover{
+  text-decoration: none;
+}
+.footer-title{
+  margin: 0 0 22px;
+  padding-top: 21px;
+  color: #1abc9c;
+  font-weight: bold;
+}
+.footerleft a{
+  color: #bdc1c5;
+}
+.footerleft a:visited {
+  color: #bdc1c5;
+}
+
+/*slide nav*/
+.bs-docs-sidebar{
+  margin-bottom: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.bs-docs-sidebar a{
+  color: #34495e;
+}
+.bs-docs-sidebar a:hover{
+  color: #16A085;
+}
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta name="description" content="">
+ <meta name="author" content="">
+<title>Overview</title>
+</head>
+<body>
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+      <span class="sr-only">The navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+    <a class="navbar-brand" href="http://igem.org/Team_Wikis?year=2013">
+      <img src="http://2013.igem.org/wiki/images/7/7d/Ouc-igem1.png">
+    </a>
+    <a class="navbar-brand" href="http://2013.igem.org/Team:OUC-China">
+      <p>OUC-China IGEM 2013</p>
+    </a>
+  </div>
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+      <ul class="nav navbar-nav pull-right">
+      <li><a href="http://2013.igem.org/Team:OUC-China">Home</a></li>
+            <li class="dropdown" role="menu" aria-labelledby="dropdownMenu">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Project<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="http://2013.igem.org/Team:OUC-China/Overview">Overview</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="http://2013.igem.org/Team:OUC-China/Achievement">Achievement & judge criteria</a></li>
+                    <li class="dropdown-submenu">
+                      <a tabindex="-1" href="#">Intracellular compartment</a>
+                <ul class="dropdown-menu">
+                        <li><a tabindex="-1" href="http://2013.igem.org/Team:OUC-China/Review">Review</a></li>
+                        <li><a tabindex="-1" href="http://2013.igem.org/Team:OUC-China/Design">Design</a></li>
+              <li><a tabindex="-1" href="http://2013.igem.org/Team:OUC-China/Microfluidics">Microfluidics</a></li>
+              <li><a tabindex="-1" href="http://2013.igem.org/Team:OUC-China/Results">Results</a></li>
+                </ul>
+            </li>
+                  <li class="dropdown-submenu">
+                  <a tabindex="-1" href="#">RNA guardian</a>
+          <ul class="dropdown-menu">
+                      <li><a tabindex="-1" href="http://2013.igem.org/Team:OUC-China/Introduction">Introduction</a></li>
+                      <li><a tabindex="-1" href="http://2013.igem.org/Team:OUC-China/RNA guardian/Design">Design</a></li>
+            <li><a tabindex="-1" href="http://2013.igem.org/Team:OUC-China/RNA guardian/Results">Result</a></li>
+            <li><a tabindex="-1" href="http://2013.igem.org/Team:OUC-China/Reference">Reference</a></li>
+            </ul>
+          </li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="http://2013.igem.org/Team:OUC-China/Part description">Part description</a></li>
+           <li role="presentation"><a role="menuitem" tabindex="-1" href="http://2013.igem.org/Team:OUC-China/Future work">Future work</a></li>
+                </ul>
+            </li>
+            <li class="dropdown" role="menu" aria-labelledby="dropdownMenu">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Modeling<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="http://2013.igem.org/Team:OUC-China/Magnetic Analysis">Magnetic Analysis</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="http://2013.igem.org/Team:OUC-China/Model in RNA guardian">Model in RNA guardian</a></li>
+                </ul>
+            </li>
+            <li><a  href="http://2013.igem.org/Team:OUC-China/Human Practice">Human Practice</a></li>
+      <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Team<b class="caret"></b></a>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="http://2013.igem.org/Team:OUC-China/Members">Members</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="http://2013.igem.org/Team:OUC-China/Instructors">Instructors</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="http://2013.igem.org/Team:OUC-China/Advisor">Advisor</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="http://2013.igem.org/Team:OUC-China/Lab">Lab</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="http://2013.igem.org/Team:OUC-China/Acknowledgement">Acknowledgement</a></li>
+        </ul>
+             </li>
+       <li class="dropdown"><a  href="http://2013.igem.org/Team:OUC-China/Safety">Safety</a></li>
+       <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Notebook<b class="caret"></b></a>
+                <ul id="menu2" class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="http://2013.igem.org/Team:OUC-China/Lab note">Lab note</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="http://2013.igem.org/Team:OUC-China/Protocol">Protocol</a></li>
+                </ul>
+             </li>
+    </ul>
+  </div>
+</div> 
+<div class="container">
+<div class="row">
+      <div class="col-md-3 bs-docs-sidebar">
+      <ul class="nav nav-list bs-docs-sidenav">
+          <li><a href="http://2013.igem.org/Team:OUC-China/Overview"><i class="icon-chevron-right"></i> Overview</a></li>
+          <li><a href="http://2013.igem.org/Team:OUC-China/Achievement"><i class="icon-chevron-right"></i>Achievement & judge criteria</a></li>
+          <li><a href="http://2013.igem.org/Team:OUC-China/Intercellular compartment"><i class="icon-chevron-right"></i>Intercellular compartment</a></li>
+          <li><a href="http://2013.igem.org/Team:OUC-China/Instruction"><i class="icon-chevron-right"></i>RNA guardian</a></li>
+      <li><a href="http://2013.igem.org/Team:OUC-China/Part_description"><i class="icon-chevron-right"></i>Part description</a></li>
+          <li><a href="#Future work"><i class="icon-chevron-right"></i>Future work</a></li>
+        </ul>      </div>
+      <div class="col-md-9">
+	   <section id="Overview">
+        <p>Our work will not end after iGEM Competition.<br/><br />Since our artifical orgnalle is just like an intracellular compartment, we hope we could combine the enzyme and MamC as a series of new fusion proteins to make it a real intracellular reactor. The first product we design is scFv 3D5 antibody which posseses important usage in cancer research. The produce of this antibody in <i>E.coli</i> has finished as below, and we hope our compartment could help this process become more quick and accurate.<br/><br /><br />
+    <img src="http://2013.igem.org/wiki/images/6/63/Ouc-future1.png" width="600" /><br/><br />Figure 1.A comparison of N-linked glycosylation in eukaryotes (humans) and prokaryotes (C. jejuni).DOL-PP Dolichyl-pyrophosphate linked tetradecasaccharide,UND-PP Undecaprenyl-pyrophosphate linked deptasaccharide, Rft1p ATP-independent,bi-directional, membrane-spanning flippase, X and Z can be any amino acid except for proline. Thecalnexin/calreticulin cycleis used for maintaining protein quality control.[1]<br /><br />What’s more, during the culture of <i>Magnetospirillum Magneticum</i> AMB-1 we find it is an interesting research object not only because of its magnetism but also its special cytoskeleton structure and membrane formation. So we hope to compose homologous recombination to introduce the ''mam''AB (also called R5 region) into <i>E.coli</i> to test the changes it brings to the <i>E.coli</i> cell, whether it is a more stable compartment chain or even a magnetosome chain.<br /><br />In order to ensure if the RNaseE is inhibited by the extra ribosome and as a result prevent the degradation, we plan to add an extra site of RnaseE and observe the rate of mRNA degradation.Also, we have thought about regulating the degradation at different temperatures. We have designed this device according to a RNA Thermosensor in Listeria monocytogenes, but we have no data about it now. We will complete it later.<br /></p>
+  
+<h3>Reference:</h3>
+ <p>Kowarik M, Numao S, Feldman MF et al (2006) N-linked glycosylation of folded proteins by the bacterial oligo-saccharyltransferase. Science 314:1148–1150</p>
+    
+		  </section>
+	    </div>
+		  </div>
+		  </div>
+<!--footer-->
+<footer>
+<div class="container">
+<div class="row">
+<div class="col-md-1"></div>
+<div class="col-md-6 footerleft">
+  <h3 class="footer-title" style="color:#bdc1c5;">About</h3>
+  <p>Thanks to:</p>
+  <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bootstrap&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Flat-ui&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unslider</p>
+  <p>Designed and built by <a href="http://copypeng.com">@PengYong</a> and <a href="http://www.renren.com/345094399/profile?ref=opensearch_normal#notice">@ZhenYuchen.</a></p>
+  <p>Code licensed under Apache License v2.0</p>
+</div>
+<div class="col-md-4">
+  <div class="footer-banner">
+    <h3 class="footer-title">Contact US</h3>
+    <ul>
+      <li>E-mail:<a href="mailto:oucigem@163.com"> oucigem@163.com</a></li>
+      <li><a href="http://oucast.com"> Official website</a></li>
+      <li><a href="http://www.renren.com/oast"> Find us on Renren</a></li>
+      <li><a href="http://weibo.com/u/2805858363"> Find us on Weibo</a></li>
+      <li><a href="https://www.google.com/maps?q=+36.062884,+120.335542&sll=36.1360706,120.3648376&sspn=0.36606958894334163,0.9386959091014536&t=m&z=16">Find us on Google Map</a></li>
+    </ul>
+  </div>
+</div>
+<div class="col-md-1"></div>
+</div>
+</div>
+</footer>
+<script src="http://code.jquery.com/jquery.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
